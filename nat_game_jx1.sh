@@ -23,7 +23,7 @@ function main()
 echo "Nhap IP proxy: "
 read ipproxy
 echo ""
-echo "Nhap port can nat: "
+echo "Nhap port Jx_server_y: "
 read port
 nat
 
