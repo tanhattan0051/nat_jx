@@ -35,7 +35,6 @@ function main()
   echo "chon mot trong cac tuy chon:  "
 	read option
 	case "$option" in
-
     "1")
       echo "Nhap IP proxy: "
       read ipproxy
@@ -44,7 +43,6 @@ function main()
       read port
       nat
       ;;
-
       "2")
         echo "Nhap IP proxy: "
         read ipproxy
@@ -53,7 +51,6 @@ function main()
         read port
         nat_them_port
         ;;
-
         "3")
           echo "Nhap IP proxy: "
           read ipproxy
