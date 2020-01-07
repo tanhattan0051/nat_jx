@@ -33,6 +33,9 @@ function main()
 {
 
   echo "chon mot trong cac tuy chon:  "
+  echo "1) nat một port khi mới setup game jx"
+  echo "2) nat thêm một port"
+  echo "3) nat nhieu port lien tiep nhau:  (6660:6669)"
 	read option
 	case "$option" in
     "1")
@@ -61,9 +64,7 @@ function main()
           ;;
 
       *)
-           echo "1) nat một port khi mới setup game jx"
-           echo "2) nat thêm một port"
-           echo "3) nat nhieu port lien tiep nhau:  (6660:6669)"
+
 
   esac
 }
