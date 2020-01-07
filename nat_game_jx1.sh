@@ -1,6 +1,7 @@
 #!/bin/bash
 
-iplocal=$(ip a  | grep eth | awk '{print $2}'| cut -d':' -f1 | sort -nr| head -n 1|cut -d'/' -f1)
+iplocal=$(ip a  | grep eth | awk '{print $2}'| cut -d':' -f1 | sort -n| head -n 3| sort -nr| head -n 1| cut -d'/' -f1 )
+#ip a  | grep eth | awk '{print $2}'| cut -d':' -f1 | sort -nr| head -n 1|cut -d'/' -f1)
 eth=$(netstat -i | grep eth | awk '{print $1}')
 ipproxy=
 port=
@@ -31,11 +32,13 @@ function nat_them_nhieu_port {
 }
 function main()
 {
-
   echo "chon mot trong cac tuy chon:  "
+  echo ""
   echo "1) nat một port khi mới setup game jx"
   echo "2) nat thêm một port"
   echo "3) nat nhieu port lien tiep nhau:  (6660:6669)"
+  echo "-----------------------------------------------------"
+  echo ""
 	read option
 	case "$option" in
     "1")
@@ -62,10 +65,7 @@ function main()
           read port
           nat_them_nhieu_port
           ;;
-
       *)
-
-
   esac
 }
 main
