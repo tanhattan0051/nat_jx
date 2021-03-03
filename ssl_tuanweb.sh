@@ -43,7 +43,7 @@ scp  Tuanweb.VPS.Com:/usr/local/directadmin/data/users/admin/domains/$domain.key
 scp  Tuanweb.VPS.Com:/usr/local/directadmin/data/users/admin/domains/$domain.cert.combined  /etc/nginx/ssl/
 mv /etc/nginx/ssl/$domain.cert.combined  /etc/nginx/ssl/$domain.pem
 
-
+service nginx restart
 
 echo "vim  /etc/nginx/ssl/$domain.pem"
 echo "vim /etc/nginx/ssl/$domain.key"
