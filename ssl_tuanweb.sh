@@ -24,9 +24,9 @@ server {
         if (\$badreferer = 1) { return 499; }
 
 #Block bot from proxy free and accept cloudfare ips      
-        if ( \$http_x_real_ip )  { return 406; }
-        if ( \$http_x_forwarded_for ) { return 406; }
-        if ( \$http_x_via ) { return 406; }
+    #    if ( \$http_x_real_ip )  { return 406; }
+     #   if ( \$http_x_forwarded_for ) { return 406; }
+      #  if ( \$http_x_via ) { return 406; }
 
         location / {
                 #testcookie  on;
